@@ -1,0 +1,54 @@
+body {
+    background: #1b1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#cenario {
+    width: 80vw;
+    height: 80vh;
+    margin: 50px auto;
+    background: #5c5a5a62;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    position: relative;
+    transition: background 0.5s;
+    overflow: hidden;
+}
+
+#cenario.iluminado {
+    background: #fffb0b;
+}
+
+#lampada {
+    width: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#surpresa {
+    display: none;
+    margin-top: 40px;
+    animation: aparecer 0.4s ease;
+}
+
+#surpresa img {
+    width: 150px;
+}
+
+#surpresa p {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
